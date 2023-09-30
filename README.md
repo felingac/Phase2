@@ -1,3 +1,36 @@
+# 🚀 Guía de Instalación del Proyecto 🚀
+
+Hola compañeros a continuación,vamos a configurar y ejecutar nuestro proyecto de la fase 2 en su entorno local.
+
+## Requisitos Previos
+🖥️ Asegúrate de tener un entorno de desarrollo local con PHP y MySQL. Puedes utilizar XAMPP, MAMP u otro software similar.
+
+### Paso 1: Clonar el Repositorio
+📦 Clona este repositorio en el directorio htdocs (en XAMPP) o www (en otros servidores web locales) utilizando el siguiente comando:
+
+git clone git@github.com:felingac/Phase2.git
+### Paso 2: Importar el Script SQL
+🗃️ Importa el archivo SQL proporcionado en tu sistema de gestión de bases de datos (por ejemplo, phpMyAdmin) para crear la base de datos.
+### Paso 3: Configurar el archivo .env
+🛠️ Abre el archivo .env en la raíz del proyecto y ajusta la configuración de la base de datos según la que configuraste en el paso anterior:
+
+database.default.hostname = localhost
+database.default.database = tu_basededatos
+database.default.username = tu_usuario
+database.default.password = tu_contraseña
+
+### Paso 4: Configurar la URL Base
+🌐 En el archivo .env, asegúrate de ajustar la variable app.baseURL con la URL local que configuraste en tu entorno de desarrollo, por ejemplo:
+
+app.baseURL = http://localhost/tu_proyecto/
+
+### Paso 5: Ejecutar el Proyecto
+⚙️ Abre un navegador web y accede a la URL local que configuraste en el paso anterior. Deberías poder ver y usar el proyecto 
+
+¡Listo! Ahora tienes el proyecto configurado y en funcionamiento en tu entorno local.
+
+
+
 # CodeIgniter 4 Framework
 
 ## What is CodeIgniter?
