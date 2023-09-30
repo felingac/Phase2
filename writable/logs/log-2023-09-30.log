@@ -1,0 +1,144 @@
+ERROR - 2023-09-30 02:13:43 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Volumes/GXBk/Server/unad/Phase2/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Volumes/GXBk/Server/unad/Phase2/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'phase2', 3306, '', 0)
+#1 /Volumes/GXBk/Server/unad/Phase2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Volumes/GXBk/Server/unad/Phase2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Volumes/GXBk/Server/unad/Phase2/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Volumes/GXBk/Server/unad/Phase2/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /Volumes/GXBk/Server/unad/Phase2/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php(20): CodeIgniter\BaseModel->findAll()
+#7 /Volumes/GXBk/Server/unad/Phase2/system/CodeIgniter.php(919): App\Controllers\Empleados->index()
+#8 /Volumes/GXBk/Server/unad/Phase2/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+#9 /Volumes/GXBk/Server/unad/Phase2/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Volumes/GXBk/Server/unad/Phase2/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Volumes/GXBk/Server/unad/Phase2/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Volumes/GXBk/Server/unad/Phase2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Volumes/GXBk/Server/unad/Phase2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Volumes/GXBk/Server/unad/Phase2/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Volumes/GXBk/Server/unad/Phase2/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /Volumes/GXBk/Server/unad/Phase2/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php(20): CodeIgniter\BaseModel->findAll()
+#6 /Volumes/GXBk/Server/unad/Phase2/system/CodeIgniter.php(919): App\Controllers\Empleados->index()
+#7 /Volumes/GXBk/Server/unad/Phase2/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+#8 /Volumes/GXBk/Server/unad/Phase2/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Volumes/GXBk/Server/unad/Phase2/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-30 02:13:43 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empleados`
+WHERE `empleados`.`delete_at` IS NULL', [], false)
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/Empleados.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-30 02:13:52 --> Error connecting to the database: mysqli_sql_exception: Access denied for user 'root'@'localhost' (using password: NO) in /Volumes/GXBk/Server/unad/Phase2/system/Database/MySQLi/Connection.php:184
+Stack trace:
+#0 /Volumes/GXBk/Server/unad/Phase2/system/Database/MySQLi/Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'phase2', 3306, '', 0)
+#1 /Volumes/GXBk/Server/unad/Phase2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 /Volumes/GXBk/Server/unad/Phase2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 /Volumes/GXBk/Server/unad/Phase2/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Volumes/GXBk/Server/unad/Phase2/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /Volumes/GXBk/Server/unad/Phase2/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php(20): CodeIgniter\BaseModel->findAll()
+#7 /Volumes/GXBk/Server/unad/Phase2/system/CodeIgniter.php(919): App\Controllers\Empleados->index()
+#8 /Volumes/GXBk/Server/unad/Phase2/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+#9 /Volumes/GXBk/Server/unad/Phase2/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Volumes/GXBk/Server/unad/Phase2/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Access denied for user '****'@'localhost' (using password: NO) in /Volumes/GXBk/Server/unad/Phase2/system/Database/MySQLi/Connection.php:229
+Stack trace:
+#0 /Volumes/GXBk/Server/unad/Phase2/system/Database/BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 /Volumes/GXBk/Server/unad/Phase2/system/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 /Volumes/GXBk/Server/unad/Phase2/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 /Volumes/GXBk/Server/unad/Phase2/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 /Volumes/GXBk/Server/unad/Phase2/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 /Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php(20): CodeIgniter\BaseModel->findAll()
+#6 /Volumes/GXBk/Server/unad/Phase2/system/CodeIgniter.php(919): App\Controllers\Empleados->index()
+#7 /Volumes/GXBk/Server/unad/Phase2/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+#8 /Volumes/GXBk/Server/unad/Phase2/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Volumes/GXBk/Server/unad/Phase2/index.php(79): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-09-30 02:13:52 --> Unable to connect to the database.
+Main connection [MySQLi]: Access denied for user '****'@'localhost' (using password: NO)
+in SYSTEMPATH/Database/BaseConnection.php on line 427.
+ 1 SYSTEMPATH/Database/BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empleados`
+WHERE `empleados`.`delete_at` IS NULL', [], false)
+ 3 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH/Controllers/Empleados.php(20): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->index()
+ 7 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 8 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-09-30 02:14:04 --> mysqli_sql_exception: Unknown column 'empleados.delete_at' in 'where clause' in /Volumes/GXBk/Server/unad/Phase2/system/Database/MySQLi/Connection.php:306
+Stack trace:
+#0 /Volumes/GXBk/Server/unad/Phase2/system/Database/MySQLi/Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 /Volumes/GXBk/Server/unad/Phase2/system/Database/BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 /Volumes/GXBk/Server/unad/Phase2/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 /Volumes/GXBk/Server/unad/Phase2/system/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 /Volumes/GXBk/Server/unad/Phase2/system/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 /Volumes/GXBk/Server/unad/Phase2/system/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 /Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php(20): CodeIgniter\BaseModel->findAll()
+#7 /Volumes/GXBk/Server/unad/Phase2/system/CodeIgniter.php(919): App\Controllers\Empleados->index()
+#8 /Volumes/GXBk/Server/unad/Phase2/system/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+#9 /Volumes/GXBk/Server/unad/Phase2/system/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 /Volumes/GXBk/Server/unad/Phase2/index.php(79): CodeIgniter\CodeIgniter->run()
+#11 {main}
+CRITICAL - 2023-09-30 02:14:04 --> Unknown column 'empleados.delete_at' in 'where clause'
+in SYSTEMPATH/Database/BaseConnection.php on line 646.
+ 1 SYSTEMPATH/Database/BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `empleados`
+WHERE `empleados`.`delete_at` IS NULL', [], false)
+ 2 SYSTEMPATH/Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH/BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH/Controllers/Empleados.php(20): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->index()
+ 6 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 7 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 02:31:30 --> Invalid file: "Empleados/create/view.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Empleados/create/view.php')
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Empleados/create/view', [], true)
+ 3 APPPATH/Views/Layout/content.php(21): view('Empleados/create/view')
+ 4 SYSTEMPATH/View/View.php(226): include('/Volumes/GXBk/Server/unad/Phase2/app/Views/Layout/content.php')
+ 5 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Layout/content', [], true)
+ 7 APPPATH/Views/Layout/wrapper.php(6): view('Layout/content')
+ 8 SYSTEMPATH/View/View.php(226): include('/Volumes/GXBk/Server/unad/Phase2/app/Views/Layout/wrapper.php')
+ 9 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Layout/wrapper', [], true)
+11 APPPATH/Controllers/Empleados.php(36): view('Layout/wrapper', [...])
+12 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->create()
+13 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+14 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-09-30 02:31:44 --> Invalid file: "Empleados/Create/view.php"
+in SYSTEMPATH/Exceptions/FrameworkException.php on line 39.
+ 1 SYSTEMPATH/View/View.php(214): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('Empleados/Create/view.php')
+ 2 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Empleados/Create/view', [], true)
+ 3 APPPATH/Views/Layout/content.php(21): view('Empleados/Create/view')
+ 4 SYSTEMPATH/View/View.php(226): include('/Volumes/GXBk/Server/unad/Phase2/app/Views/Layout/content.php')
+ 5 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Layout/content', [], true)
+ 7 APPPATH/Views/Layout/wrapper.php(6): view('Layout/content')
+ 8 SYSTEMPATH/View/View.php(226): include('/Volumes/GXBk/Server/unad/Phase2/app/Views/Layout/wrapper.php')
+ 9 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Layout/wrapper', [], true)
+11 APPPATH/Controllers/Empleados.php(36): view('Layout/wrapper', [...])
+12 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->create()
+13 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+14 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
