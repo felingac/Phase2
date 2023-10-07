@@ -31,15 +31,15 @@
                     <a href="<?= base_url('Empleados/') ?>" class="nav-link active">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
-                            Gestionar Empleados
+                        Manage Employees
                             <i class="right fas fa-angle-left"></i>
                         </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="<?= base_url('empleados/crear') ?>" class="nav-link">
+                            <a href="<?= base_url('Empleados/create') ?>" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Nuevo Empleado</p>
+                                <p>New employee</p>
                             </a>
                         </li>
 

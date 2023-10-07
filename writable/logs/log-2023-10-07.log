@@ -1,0 +1,147 @@
+CRITICAL - 2023-10-07 04:07:13 --> The route for "Empleados/" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Empleados/')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Empleados.php(46): redirect('Empleados/')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 04:07:35 --> The route for "Empleados/" cannot be found.
+in SYSTEMPATH/HTTP/RedirectResponse.php on line 60.
+ 1 SYSTEMPATH/HTTP/RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('Empleados/')
+ 2 SYSTEMPATH/Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH/Controllers/Empleados.php(46): redirect('Empleados/')
+ 4 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 5 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 6 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 04:08:26 --> Undefined property: App\Controllers\Empleados::$load
+in APPPATH/Controllers/Empleados.php on line 14.
+ 1 APPPATH/Controllers/Empleados.php(14): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined property: App\\Controllers\\Empleados::$load', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 14)
+ 2 SYSTEMPATH/CodeIgniter.php(891): App\Controllers\Empleados->__construct()
+ 3 SYSTEMPATH/CodeIgniter.php(485): CodeIgniter\CodeIgniter->createController()
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 04:15:01 --> Undefined variable $empleado
+in APPPATH/Views/Empleados/Edit/view.php on line 15.
+ 1 APPPATH/Views/Empleados/Edit/view.php(15): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $empleado', '/Volumes/GXBk/Server/unad/Phase2/app/Views/Empleados/Edit/view.php', 15)
+ 2 SYSTEMPATH/View/View.php(226): include('/Volumes/GXBk/Server/unad/Phase2/app/Views/Empleados/Edit/view.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Empleados/Edit/view', [], true)
+ 5 APPPATH/Views/Layout/content.php(21): view('Empleados/Edit/view')
+ 6 SYSTEMPATH/View/View.php(226): include('/Volumes/GXBk/Server/unad/Phase2/app/Views/Layout/content.php')
+ 7 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Layout/content', [], true)
+ 9 APPPATH/Views/Layout/wrapper.php(6): view('Layout/content')
+10 SYSTEMPATH/View/View.php(226): include('/Volumes/GXBk/Server/unad/Phase2/app/Views/Layout/wrapper.php')
+11 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Layout/wrapper', [], true)
+13 APPPATH/Controllers/Empleados.php(52): view('Layout/wrapper', [...])
+14 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->edit(1)
+15 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+16 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 04:17:47 --> Undefined array key "id"
+in APPPATH/Controllers/Empleados.php on line 62.
+ 1 APPPATH/Controllers/Empleados.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 62)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 04:18:06 --> Undefined array key "id"
+in APPPATH/Controllers/Empleados.php on line 62.
+ 1 APPPATH/Controllers/Empleados.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 62)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 04:19:59 --> Undefined array key "id"
+in APPPATH/Controllers/Empleados.php on line 62.
+ 1 APPPATH/Controllers/Empleados.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 62)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 04:20:49 --> Undefined array key "id"
+in APPPATH/Controllers/Empleados.php on line 66.
+ 1 APPPATH/Controllers/Empleados.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 66)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 04:31:31 --> Undefined array key "tel"
+in APPPATH/Views/Empleados/view/view.php on line 30.
+ 1 APPPATH/Views/Empleados/view/view.php(30): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "tel"', '/Volumes/GXBk/Server/unad/Phase2/app/Views/Empleados/view/view.php', 30)
+ 2 SYSTEMPATH/View/View.php(226): include('/Volumes/GXBk/Server/unad/Phase2/app/Views/Empleados/view/view.php')
+ 3 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Empleados/view/view', [], true)
+ 5 APPPATH/Views/Layout/content.php(21): view('Empleados/view/view')
+ 6 SYSTEMPATH/View/View.php(226): include('/Volumes/GXBk/Server/unad/Phase2/app/Views/Layout/content.php')
+ 7 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Layout/content', [], true)
+ 9 APPPATH/Views/Layout/wrapper.php(6): view('Layout/content')
+10 SYSTEMPATH/View/View.php(226): include('/Volumes/GXBk/Server/unad/Phase2/app/Views/Layout/wrapper.php')
+11 SYSTEMPATH/View/View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+12 SYSTEMPATH/Common.php(1188): CodeIgniter\View\View->render('Layout/wrapper', [], true)
+13 APPPATH/Controllers/Empleados.php(25): view('Layout/wrapper', [...])
+14 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->index()
+15 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+16 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 04:51:31 --> Call to a member function hasMoved() on string
+in APPPATH/Controllers/Empleados.php on line 99.
+ 1 APPPATH/Controllers/Empleados.php(70): App\Controllers\Empleados->uploadPhoto('WhatsApp Image 2023-10-05 at 19.40.21 (1).jpeg')
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 04:52:46 --> Undefined array key "photo"
+in APPPATH/Controllers/Empleados.php on line 70.
+ 1 APPPATH/Controllers/Empleados.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "photo"', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 70)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 04:55:19 --> Undefined array key "photo"
+in APPPATH/Controllers/Empleados.php on line 70.
+ 1 APPPATH/Controllers/Empleados.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "photo"', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 70)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 04:55:36 --> Undefined array key "photo"
+in APPPATH/Controllers/Empleados.php on line 70.
+ 1 APPPATH/Controllers/Empleados.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "photo"', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 70)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 04:55:53 --> Undefined array key "photo"
+in APPPATH/Controllers/Empleados.php on line 70.
+ 1 APPPATH/Controllers/Empleados.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "photo"', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 70)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 04:56:01 --> Undefined array key "photo"
+in APPPATH/Controllers/Empleados.php on line 70.
+ 1 APPPATH/Controllers/Empleados.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "photo"', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 70)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 04:56:28 --> Undefined array key "photo"
+in APPPATH/Controllers/Empleados.php on line 70.
+ 1 APPPATH/Controllers/Empleados.php(70): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "photo"', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 70)
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-07 05:01:07 --> Call to a member function hasMoved() on array
+in APPPATH/Controllers/Empleados.php on line 102.
+ 1 APPPATH/Controllers/Empleados.php(72): App\Controllers\Empleados->uploadPhoto([...])
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
