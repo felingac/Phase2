@@ -8,31 +8,31 @@
             <form method="post" action="<?=base_url('Empleados/save')?>" enctype="multipart/form-data">
                 <div class="form-group col-6">
                     <label for="photo">Photo</label>
-                    <input type="file" class="form-control" name="photo_id">
+                    <input type="file" class="form-control" name="photo_id" required>
                 </div>
                 <div class="form-group col-6">
                     <label for="code">Code</label>
-                    <input type="text" class="form-control" name="code">
+                    <input type="text" class="form-control" name="code" required>
                 </div>
                 <div class="form-group col-6">
                     <label for="name">Name</label>
-                    <input type="text" class="form-control" name="name">
+                    <input type="text" class="form-control" name="name" required>
                 </div>
                 <div class="form-group col-6">
                     <label for="surname">Surname</label>
-                    <input type="text" class="form-control" name="surname">
+                    <input type="text" class="form-control" name="surname" required>
                 </div>
                 <div class="form-group col-6">
                     <label for="identity">Identity</label>
-                    <input type="text" class="form-control" name="identity">
+                    <input type="text" class="form-control" name="identity" required>
                 </div>
                 <div class="form-group col-6">
                     <label for="address">Address</label>
-                    <input type="text" class="form-control" name="address">
+                    <input type="text" class="form-control" name="address" required>
                 </div>
                 <div class="form-group col-6">
                     <label for="telephone">Telephone</label>
-                    <input type="tel" class="form-control" name="telephone">
+                    <input type="tel" class="form-control" name="telephone" required>
                 </div>
                 <button type="submit" class="btn btn-primary">Enviar</button>
             </form>

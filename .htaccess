@@ -9,3 +9,8 @@ RewriteCond $1 !^(index\.php|resources|robots\.txt)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule ^(.*)$ index.php/$1 [L,QSA]  
+
+
+# Permitir el acceso a la carpeta writable
+RewriteCond %{REQUEST_URI} ^/writable/uploads/
+RewriteRule ^writable/(.*)$ /index.php?/$1 [L]

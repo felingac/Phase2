@@ -1,0 +1,84 @@
+CRITICAL - 2023-10-10 01:18:13 --> Call to a member function getName() on array
+in APPPATH/Controllers/Empleados.php on line 95.
+ 1 APPPATH/Controllers/Empleados.php(64): App\Controllers\Empleados->uploadPhoto([...], '077799')
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-10 01:18:27 --> Call to a member function getName() on array
+in APPPATH/Controllers/Empleados.php on line 95.
+ 1 APPPATH/Controllers/Empleados.php(64): App\Controllers\Empleados->uploadPhoto([...], '077799')
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-10 01:28:05 --> Call to a member function getName() on array
+in APPPATH/Controllers/Empleados.php on line 99.
+ 1 APPPATH/Controllers/Empleados.php(68): App\Controllers\Empleados->uploadPhoto([...], '979797')
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-10 01:28:37 --> Call to a member function getName() on array
+in APPPATH/Controllers/Empleados.php on line 99.
+ 1 APPPATH/Controllers/Empleados.php(68): App\Controllers\Empleados->uploadPhoto([...], '077799')
+ 2 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->save()
+ 3 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 4 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-10 02:41:22 --> unlink(/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg): No such file or directory
+in APPPATH/Controllers/Empleados.php on line 91.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg): No such file or directory', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 91)
+ 2 APPPATH/Controllers/Empleados.php(91): unlink('/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->delete()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-10 02:41:43 --> unlink(/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg): No such file or directory
+in APPPATH/Controllers/Empleados.php on line 91.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg): No such file or directory', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 91)
+ 2 APPPATH/Controllers/Empleados.php(91): unlink('/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->delete()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-10 02:42:01 --> unlink(/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg): No such file or directory
+in APPPATH/Controllers/Empleados.php on line 91.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg): No such file or directory', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 91)
+ 2 APPPATH/Controllers/Empleados.php(91): unlink('/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->delete()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-10 02:46:02 --> unlink(/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg): No such file or directory
+in APPPATH/Controllers/Empleados.php on line 94.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg): No such file or directory', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 94)
+ 2 APPPATH/Controllers/Empleados.php(94): unlink('/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->delete()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-10 02:47:24 --> unlink(/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg): No such file or directory
+in APPPATH/Controllers/Empleados.php on line 95.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg): No such file or directory', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 95)
+ 2 APPPATH/Controllers/Empleados.php(95): unlink('/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->delete()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-10 02:49:57 --> unlink(/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg): No such file or directory
+in APPPATH/Controllers/Empleados.php on line 95.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg): No such file or directory', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 95)
+ 2 APPPATH/Controllers/Empleados.php(95): unlink('/uploads/employees/0988786/20231010022904_whatsappimage2023-10-09at163939.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->delete()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-10 02:52:33 --> unlink(/uploads/employees/077799/20231010025212_whatsappimage2023-10-09at204958.jpeg): No such file or directory
+in APPPATH/Controllers/Empleados.php on line 95.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'unlink(/uploads/employees/077799/20231010025212_whatsappimage2023-10-09at204958.jpeg): No such file or directory', '/Volumes/GXBk/Server/unad/Phase2/app/Controllers/Empleados.php', 95)
+ 2 APPPATH/Controllers/Empleados.php(95): unlink('/uploads/employees/077799/20231010025212_whatsappimage2023-10-09at204958.jpeg')
+ 3 SYSTEMPATH/CodeIgniter.php(919): App\Controllers\Empleados->delete()
+ 4 SYSTEMPATH/CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Empleados))
+ 5 SYSTEMPATH/CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH/index.php(79): CodeIgniter\CodeIgniter->run()

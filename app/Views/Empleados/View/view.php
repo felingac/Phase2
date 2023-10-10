@@ -21,7 +21,7 @@
                 <tbody>
                     <?php foreach ($empleados as $empleado) : ?>
                         <tr>
-                            <td><?= $empleado['code'] ?></td>
+                            <td><a href="<?=base_url($empleado['photo_id'])?>" target="_blank">Look Photo</a></td>
                             <td><?= $empleado['code'] ?></td>
                             <td><?= $empleado['name'] ?></td>
                             <td><?= $empleado['surname'] ?></td>
@@ -31,7 +31,7 @@
                             <td>
                                 <div class="btn-group btn-group-sm">
                                     <a href="<?=base_url('Empleados/edit/')?><?= $empleado['id'] ?>" class="btn btn-info"><i class="fas fa-edit"></i></a>
-                                    <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+                                    <button type="button" class="btn btn-danger delete" data-id="<?= $empleado['id'] ?>"><i class="fas fa-trash"></i></button>
                                 </div>
                             </td>
                         </tr>

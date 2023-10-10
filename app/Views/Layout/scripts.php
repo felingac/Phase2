@@ -4,4 +4,5 @@
 <script src="<?=base_url('public/plugins/bootstrap/js/bootstrap.bundle.min.js')?>"></script>
 
 
+<script src="<?=base_url('public/plugins/sweetalert2/sweetalert2.all.min.js')?>"></script>
 <script src="<?=base_url('public/plugins/datatables/jquery.dataTables.min.js')?>"></script>

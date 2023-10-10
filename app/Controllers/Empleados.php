@@ -18,8 +18,8 @@ class Empleados extends BaseController
     {
         $data = [
             'title' => '',
-            'content' => 'Empleados/view/view',
-            'scripts' => 'Empleados/view/view_scripts',
+            'content' => 'Empleados/View/view',
+            'scripts' => 'Empleados/View/view_scripts',
             'empleados' => $this->EmpleadosModels->findAll()
         ];
 
@@ -59,9 +59,13 @@ class Empleados extends BaseController
 
         $dataForm = $this->request->getPost();
 
+        /* var_dump($_FILES['photo_id']);
+        var_dump($this->request->getPost('photo_id'));
+        die; */
+
 
         if (!isset($dataForm['id'])) {
-            $photoRoute = $this->uploadPhoto($_FILES['photo_id']);
+            $photoRoute = $this->uploadPhoto($this->request->getFile('photo_id'), $dataForm['code']);
             $dataForm['photo_id'] = $photoRoute;
 
             $this->EmpleadosModels->insert($dataForm);
@@ -69,7 +73,7 @@ class Empleados extends BaseController
             return redirect()->to(base_url('Empleados'));
         } else {
 
-            $photoRoute = $this->uploadPhoto($_FILES['photo_id']);
+            $photoRoute = $this->uploadPhoto($this->request->getFile('photo_id'), $dataForm['code']);
 
             $dataForm['photo_id'] = $photoRoute;
 
@@ -83,28 +87,38 @@ class Empleados extends BaseController
 
         $dataForm = $this->request->getPost();
 
-        if (!isset($dataForm['id'])) {
-            $this->EmpleadosModels->insert($dataForm);
-            return redirect()->to(base_url('Empleados/'));
-        } else {
-            $this->EmpleadosModels->update($dataForm['id'], $dataForm);
-            return redirect()->to(base_url('Empleados/'));
-        }
+        $employee = $this->EmpleadosModels->find($dataForm['id']);
+
+        $absolutePath = ROOTPATH.$employee['photo_id'];
+        unlink($absolutePath);
+        $this->EmpleadosModels->delete($dataForm['id']);
+        return json_encode(['message' => 'Employee deleted', 'state' => true]);
     }
 
 
-    function uploadPhoto($file)
+    function uploadPhoto($file, $code)
     {
-        if ($file instanceof \CodeIgniter\Files\File && !$file->hasMoved()) {
-            $filepath = WRITEPATH . 'uploads/' . $file->store();
 
-            $data = ['uploaded_fileinfo' => new \CodeIgniter\Files\File($filepath)];
+        $file_name = $file;
 
-            return $data;
+        if ($file_name->getName() != null) {
+
+            $date = str_replace(':', '', date('YmdHis'));
+            $limpiarMayus = trim(strtolower($file_name->getName()));
+            $limpiarCaracteres = preg_replace('/\.(?=.*\.)/', '', $limpiarMayus);
+            $limpiarEspacios = str_replace(' ', '', $limpiarCaracteres);
+            $photoFile = $date.'_'.$limpiarEspacios;
+
+            $extension = pathinfo($photoFile, PATHINFO_EXTENSION);
+            $fileFolder = strtoupper(trim($code));
+
+            if (!is_dir('uploads/employees/'.$fileFolder)) {
+                mkdir('./uploads/employees/' . $fileFolder, 0755, true);
+            }
+            $file_name->move(ROOTPATH.'uploads/employees/'.$fileFolder.'/', $photoFile);
+            $path = '/uploads/employees/' . $fileFolder . '/' . $photoFile;
+
+            return $path;
         }
-
-        $data = ['errors' => 'The file has already been moved.'];
-
-        return $data;
     }
 }
